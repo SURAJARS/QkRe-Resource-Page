@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Services Box | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    
+    <div class="wrapper1">
+      <div class="box">
+        <div class="front-face">
+          <div class="icon">
+<i class="fas fa-flask"></i></div>
+         
+          
+<span>Chemicals</span>
+        </div>
+<div class="back-face">
+          <span>Chemicals</span>
+          <p>
+We avail the following things:<br> <br>
+
+
+1.The best quality products in the least possible time.<br>
+2.Lab setup equipment.<br>
+3.Basic and advanced chemicals.<br>
+4.Industrial chemicals.<br>
+5.Glass wares from companies like Borosil, Borosilicate etc.<br>
+            
+            Click to know more 
+</p>
+</div>
+</div>
+<div class="box">
+        <div class="front-face">
+          <div class="icon">
+<i class="fas fa-bolt"></i></div>
+<span>Electrical Equipments</span>
+        </div>
+<div class="back-face">
+          <span>Electrical Equipments</span>
+          <p>
+1.Electricity is an indefensible part of our lives. There are lot of projects that involve usage of various electrical equipment.<br>
+
+
+2.We avail electrical items from basic to advanced equipment such as capacitors, resistors, electromagnetic components, switch boards, sensors, bell, semiconductor devices etc.<br>Click to know more</p>
+</div>
+</div>
+<div class="box">
+        <div class="front-face">
+          <div class="icon">
+<i class="fas fa-tools"></i></div>
+<span>Mechanical Equipments</span>
+        </div>
+<div class="back-face">
+          <span>Mechanical Equipments</span>
+          <p>
+1.We avail different types of mechanical equipment such as structural, control and mechanism related equipment.<br>
+
+
+
+
+2.We are dealing with the various types of motion mechanism, various type sensors for measurement, thermocouples and many more on requirement.<br>
+  Cick to know more</p>
+</div>
+</div>
+</div>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: #f2f2f2;
+}
+.wrapper1{
+  display: grid;
+  margin: 200px 90px auto;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+@media (max-width: 700px) {
+  .wrapper1{
+    margin: 200px auto;
+  }
+}
+.wrapper1 .box{
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+  perspective: 1000px;
+}
+.wrapper1 .box .front-face{
+  background: #fff;
+  height: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.box .front-face .icon{
+  height: 80px;
+}
+.box .front-face .img {
+    height:20px;
+    width:10%;
+  }
+.box .front-face .icon i{
+  font-size: 65px;
+}
+.box .front-face span,
+.box .back-face span{
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .front-face .icon i,
+.box .front-face span{
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box .back-face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 320px;
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  opacity: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  transform: translateY(110px) rotateX(-90deg);
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.box .back-face p{
+  margin-top: 10px;
+  text-align: justify;
+}
+.box:hover .back-face{
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+.box:hover .front-face{
+  opacity: 0;
+  transform: translateY(-110px) rotateX(90deg);
+}
+
+
+</style>
+</body>
+</html>
+
